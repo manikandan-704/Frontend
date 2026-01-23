@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>popup</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        body {
+            background-color: aquamarine;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: large;
+            font-weight: bolder;
+        }
+        img{
+            width: 100%;
+        }
+        .submit{
+            position: absolute;
+            top: 45%;
+            padding: 5px;
+            text-align: center; 
+            } 
+
+        .popup {
+            position: absolute;
+            top: 0;
+            translate: scale(0);
+            flex-direction: column;
+            background-color: white;
+            width: 250px;
+            padding: 10px;
+            text-align: center;
+            transition: 0.5 ease;
+            visibility: hidden;
+        }
+        .openpopup{
+            top: 45%;
+            transform: scale(1);
+            visibility: visible;
+        }
+        .ok{
+            padding: 5px;
+            width: 80px;
+            margin-top: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="submit" id="open" onclick="openPopup()">Submit</button>
+    <div class="popup" id="pop">
+        <img src="practice/Practice3/asset/404-tick.png" alt="">
+        <h2>Thank You</h2>
+        <button class="ok" onclick="closePopup()">ok</button>
+    </div>
+    <script>
+        const open=document.getElementById("pop")
+        function openPopup(){
+            open.classList.add("openpopup");
+        }
+     function closePopup(){
+            open.classList.remove("openpopup");
+        }
+    </script>
+</body>
+
+</html>
