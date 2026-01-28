@@ -1,4 +1,18 @@
-const express=require('express');
+export const DB_NAME = "React.js"
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* const express=require('express');
 const cors=require('cors')
 
 const app= express();
@@ -7,4 +21,4 @@ app.use(express.json());
 
 app.use('/api',(req,res)=>{
     res.send("Hello")
-})
+}) */
