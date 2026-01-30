@@ -1,16 +1,4 @@
-export const DB_NAME = "React.js"
-
-
-
-
-
-
-
-
-
-
-
-
+export const DB_NAME = "React.js";
 
 /* const express=require('express');
 const cors=require('cors')
